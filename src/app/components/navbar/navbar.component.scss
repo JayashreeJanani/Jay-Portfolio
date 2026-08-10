@@ -1,0 +1,146 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #f1e4e8;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 18px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  text-decoration: none;
+  color: #1f1f2e;
+}
+
+.brand-script {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 36px;
+  color: #d9467a;
+  font-weight: 600;
+}
+
+.brand-subtitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.2;
+
+  small {
+    color: #d9467a;
+    font-size: 13px;
+    font-weight: 500;
+  }
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  a {
+    position: relative;
+    text-decoration: none;
+    color: #262633;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.25s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+
+      width: 0;
+      height: 2px;
+
+      background: #d9467a;
+      transition: width 0.25s ease;
+    }
+
+    &:hover {
+      color: #d9467a;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+
+    &.active {
+      color: #d9467a;
+    }
+
+    &.active::after {
+      width: 100%;
+    }
+  }
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 20px;
+
+  background: #d9467a;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+  &:hover {
+    background: #c9366b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(217, 70, 122, 0.2);
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-links {
+    gap: 16px;
+
+    a {
+      font-size: 13px;
+    }
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar-container {
+    padding: 16px 20px;
+  }
+}
