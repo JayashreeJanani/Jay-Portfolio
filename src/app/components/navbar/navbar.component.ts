@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  active: string = 'home';
+
+  setActive(section: string) {
+    this.active = section;
+  }
+
 }

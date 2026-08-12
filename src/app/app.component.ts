@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import {HeroComponent} from "./components/hero/hero.component";
+import { HeroComponent } from "./components/hero/hero.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { AboutMeComponent } from './components/about-me/about-me.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeroComponent, NavbarComponent,  NavbarComponent],
+  standalone: true,
+  imports: [HeroComponent, NavbarComponent, AboutMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
