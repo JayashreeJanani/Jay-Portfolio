@@ -5,11 +5,18 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import {ProjectsComponent} from "./components/projects/projects.component";
 import {SkillsComponent} from "./components/skills/skills.component";
+import { CertificationsComponent } from './components/certifications/certifications.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeroComponent, NavbarComponent, AboutMeComponent, ExperienceComponent, ProjectsComponent, SkillsComponent],
+  imports: [HeroComponent, 
+    NavbarComponent, 
+    AboutMeComponent,
+     ExperienceComponent, 
+     ProjectsComponent, 
+     SkillsComponent,
+     CertificationsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
