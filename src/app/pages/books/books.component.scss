@@ -1,0 +1,723 @@
+.books-page {
+  min-height: 100vh;
+
+  padding: 70px 40px 110px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffafd 0%,
+      #fff7fa 100%
+    );
+}
+
+.books-container {
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   BACK LINK
+========================= */
+
+.back-link {
+  display: inline-flex;
+
+  margin-bottom: 55px;
+
+  color: #d9467a;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    transform: translateX(-4px);
+    color: #c9366b;
+  }
+}
+
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+.books-heading {
+  max-width: 850px;
+
+  margin-bottom: 80px;
+}
+
+.section-label {
+  margin: 0 0 12px;
+
+  color: #d9467a;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.books-heading h1 {
+  margin: 0 0 22px;
+
+  color: #1f1f2e;
+
+  font-size: clamp(52px, 6vw, 82px);
+  line-height: 1;
+
+  span {
+    color: #d9467a;
+  }
+}
+
+.books-description {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #62626d;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   COMMON LABEL
+========================= */
+
+.mini-label {
+  margin: 0 0 8px;
+
+  color: #d9467a;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   BOOK SPREAD
+========================= */
+
+.book-spread {
+  margin-bottom: 120px;
+}
+
+.spread-intro {
+  max-width: 700px;
+
+  margin-bottom: 35px;
+
+  h2 {
+    margin: 0;
+
+    color: #292934;
+
+    font-size: clamp(30px, 3vw, 42px);
+    line-height: 1.2;
+  }
+}
+
+
+/* =========================
+   SCATTERED BOOK AREA
+========================= */
+
+.spread-area {
+  position: relative;
+
+  min-height: 650px;
+
+  border: 1px solid #efdce3;
+  border-radius: 32px;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      #ffffff 0%,
+      #fff5f8 65%,
+      #fdebf1 100%
+    );
+
+  overflow: hidden;
+
+  box-shadow:
+    0 16px 45px rgba(31, 31, 46, 0.05);
+}
+
+
+/* =========================
+   INDIVIDUAL BOOKS
+========================= */
+
+.spread-book {
+  position: absolute;
+
+  width: 145px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    z-index 0s;
+
+  img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    border-radius: 12px;
+
+    box-shadow:
+      0 14px 28px rgba(31, 31, 46, 0.18);
+  }
+
+  &:hover {
+    z-index: 10;
+
+    transform:
+      translateY(-14px)
+      rotate(0deg)
+      scale(1.08);
+
+    img {
+      box-shadow:
+        0 22px 40px rgba(217, 70, 122, 0.22);
+    }
+  }
+}
+
+
+/* =========================
+   SCATTER POSITIONS
+========================= */
+
+.book-one {
+  top: 90px;
+  left: 8%;
+
+  transform: rotate(-8deg);
+}
+
+.book-two {
+  top: 235px;
+  left: 25%;
+
+  transform: rotate(5deg);
+}
+
+.book-three {
+  top: 70px;
+  left: 42%;
+
+  transform: rotate(-3deg);
+}
+
+.book-four {
+  top: 255px;
+  left: 57%;
+
+  transform: rotate(7deg);
+}
+
+.book-five {
+  top: 100px;
+  right: 18%;
+
+  transform: rotate(4deg);
+}
+
+.book-six {
+  bottom: 55px;
+  right: 7%;
+
+  transform: rotate(-6deg);
+}
+
+.book-seven {
+  bottom: 40px;
+  left: 10%;
+
+  transform: rotate(3deg);
+}
+
+
+/* =========================
+   CURRENTLY READING
+========================= */
+
+.current-book {
+  position: absolute;
+}
+
+.current-badge {
+  position: absolute;
+
+  top: -14px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 2;
+
+  white-space: nowrap;
+
+  padding: 7px 12px;
+
+  border-radius: 999px;
+
+  background: #d9467a;
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  box-shadow:
+    0 8px 18px rgba(217, 70, 122, 0.22);
+}
+
+
+/* =========================
+   TIMELINE SECTION
+========================= */
+
+.reading-timeline {
+  padding-top: 20px;
+}
+
+.timeline-heading {
+  max-width: 700px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+
+  h2 {
+    margin: 0 0 15px;
+
+    color: #292934;
+
+    font-size: clamp(34px, 4vw, 48px);
+  }
+
+  p {
+    margin: 0;
+
+    color: #74747e;
+
+    font-size: 15px;
+    line-height: 1.8;
+  }
+}
+
+
+/* =========================
+   TIMELINE LINE
+========================= */
+
+.timeline {
+  position: relative;
+
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 50%;
+
+    width: 2px;
+
+    transform: translateX(-50%);
+
+    background:
+      linear-gradient(
+        to bottom,
+        #f3bfd1,
+        #d9467a,
+        #f3bfd1
+      );
+  }
+}
+
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item {
+  position: relative;
+
+  width: 50%;
+
+  margin-bottom: 70px;
+
+  box-sizing: border-box;
+
+  &.left {
+    left: 0;
+
+    padding-right: 65px;
+
+    .timeline-card {
+      margin-left: auto;
+    }
+  }
+
+  &.right {
+    left: 50%;
+
+    padding-left: 65px;
+  }
+}
+
+
+/* =========================
+   TIMELINE DOT
+========================= */
+
+.timeline-dot {
+  position: absolute;
+
+  top: 36px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 5px solid #fffafd;
+  border-radius: 50%;
+
+  background: #d9467a;
+
+  box-shadow:
+    0 0 0 2px #f0b4c9;
+
+  z-index: 2;
+}
+
+.timeline-item.left .timeline-dot {
+  right: -9px;
+}
+
+.timeline-item.right .timeline-dot {
+  left: -9px;
+}
+
+
+/* =========================
+   TIMELINE CARD
+========================= */
+
+.timeline-card {
+  position: relative;
+
+  max-width: 420px;
+
+  padding: 30px;
+
+  border: 1px solid #eedde3;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 10px 35px rgba(31, 31, 46, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    border-color: #e6b6c7;
+
+    box-shadow:
+      0 18px 45px rgba(217, 70, 122, 0.09);
+  }
+
+  h3 {
+    margin: 8px 0 5px;
+
+    color: #292934;
+
+    font-size: 24px;
+    line-height: 1.35;
+  }
+
+  a {
+    display: inline-flex;
+
+    width: fit-content;
+
+    margin-top: 20px;
+
+    color: #d9467a;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: translateX(4px);
+    }
+  }
+}
+
+
+/* =========================
+   TIMELINE DETAILS
+========================= */
+
+.timeline-number {
+  color: #d9467a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+.timeline-meta {
+  margin: 9px 0 0;
+
+  color: #b06780;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.author {
+  margin: 0 0 15px;
+
+  color: #9999a2;
+
+  font-size: 12px;
+}
+
+.timeline-review {
+  margin: 0;
+
+  color: #686873;
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   SPOILER BADGE
+========================= */
+
+.spoiler-badge {
+  display: inline-flex;
+
+  width: fit-content;
+
+  margin-left: 10px;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: #fff0f5;
+
+  color: #d9467a;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .spread-area {
+    min-height: 580px;
+  }
+
+  .spread-book {
+    width: 125px;
+  }
+
+  .book-six {
+    right: 4%;
+  }
+
+  .timeline-card {
+    max-width: 350px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+  .books-page {
+    padding: 55px 20px 90px;
+  }
+
+  .books-heading {
+    margin-bottom: 60px;
+  }
+
+
+  /* -------------------------
+     BOOK SPREAD
+  ------------------------- */
+
+  .spread-area {
+    min-height: auto;
+
+    padding: 35px 20px;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    align-items: start;
+  }
+
+  .spread-book {
+    position: relative;
+
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    width: 110px;
+
+    margin: 0 auto;
+
+    transform: rotate(0deg);
+
+    &:hover {
+      transform:
+        translateY(-6px)
+        scale(1.04);
+    }
+  }
+
+
+  /* -------------------------
+     TIMELINE
+  ------------------------- */
+
+  .timeline {
+    &::before {
+      left: 12px;
+    }
+  }
+
+  .timeline-item {
+    width: 100%;
+
+    left: 0 !important;
+
+    margin-bottom: 45px;
+
+    padding-left: 45px !important;
+    padding-right: 0 !important;
+
+    .timeline-card {
+      max-width: none;
+
+      margin: 0 !important;
+    }
+  }
+
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 3px;
+    right: auto;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .books-heading h1 {
+    font-size: 48px;
+  }
+
+  .books-description {
+    font-size: 15px;
+  }
+
+  .spread-area {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .spread-book {
+    width: 95px;
+  }
+
+  .timeline-card {
+    padding: 24px;
+
+    h3 {
+      font-size: 21px;
+    }
+  }
+
+}
+
+.book-eight {
+  top: 330px;
+  left: 38%;
+
+  transform: rotate(-5deg);
+}
