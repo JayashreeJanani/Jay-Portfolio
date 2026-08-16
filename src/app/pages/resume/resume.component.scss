@@ -1,0 +1,330 @@
+.resume-page {
+  min-height: 100vh;
+
+  padding: 70px 40px 110px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffafd 0%,
+      #fff6f9 100%
+    );
+}
+
+.resume-container {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back-link {
+  display: inline-flex;
+
+  margin-bottom: 55px;
+
+  color: #d9467a;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    transform: translateX(-4px);
+
+    color: #c9366b;
+  }
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.resume-heading {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 40px;
+
+  margin-bottom: 50px;
+}
+
+.resume-heading > div:first-child {
+  max-width: 760px;
+}
+
+.section-label {
+  margin: 0 0 12px;
+
+  color: #d9467a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.resume-heading h1 {
+  margin: 0 0 20px;
+
+  color: #1f1f2e;
+
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 1;
+
+  span {
+    color: #d9467a;
+  }
+}
+
+.resume-description {
+  margin: 0;
+
+  color: #62626d;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.resume-actions {
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+
+  flex-shrink: 0;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 18px;
+
+  border-radius: 12px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.primary-btn {
+  background: #d9467a;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 24px rgba(217, 70, 122, 0.18);
+
+  &:hover {
+    transform: translateY(-2px);
+
+    background: #c9366b;
+
+    box-shadow:
+      0 14px 30px rgba(217, 70, 122, 0.24);
+  }
+}
+
+.secondary-btn {
+  border: 1px solid #e7c2cf;
+
+  background: #ffffff;
+
+  color: #d9467a;
+
+  &:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+      0 10px 25px rgba(31, 31, 46, 0.06);
+  }
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.resume-preview {
+  overflow: hidden;
+
+  border: 1px solid #eadce1;
+  border-radius: 24px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 55px rgba(31, 31, 46, 0.08);
+}
+
+
+/* =========================
+   PREVIEW TOP BAR
+========================= */
+
+.preview-top {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 16px 20px;
+
+  border-bottom: 1px solid #eee3e7;
+
+  background: #fffafd;
+
+  a {
+    color: #d9467a;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: translateX(3px);
+    }
+  }
+}
+
+.preview-info {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #555561;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.preview-dot {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #d9467a;
+
+  box-shadow:
+    0 0 0 4px #fde7ef;
+}
+
+
+/* =========================
+   PDF
+========================= */
+
+.pdf-wrapper {
+  width: 100%;
+  height: 900px;
+
+  background: #f6f6f8;
+
+  iframe {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border: 0;
+  }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .resume-page {
+    padding: 60px 28px 90px;
+  }
+
+  .resume-heading {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .pdf-wrapper {
+    height: 760px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .resume-page {
+    padding: 50px 20px 75px;
+  }
+
+  .back-link {
+    margin-bottom: 40px;
+  }
+
+  .resume-actions {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+
+    box-sizing: border-box;
+  }
+
+  .preview-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .pdf-wrapper {
+    height: 650px;
+  }
+}

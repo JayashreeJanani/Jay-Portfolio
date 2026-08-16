@@ -8,6 +8,7 @@ import { AtomicHabitsComponent } from './pages/reviews/atomic-habits/atomic-habi
 import { HomecomingComponent } from './pages/reviews/homecoming/homecoming.component';
 import { High5HabitsComponent } from './pages/reviews/high-5-habits/high-5-habits.component';
 import { TheOtherSideOfMidnightComponent } from './pages/reviews/the-other-side-of-midnight/the-other-side-of-midnight.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 export const routes: Routes = [
 
       {
@@ -47,6 +48,11 @@ export const routes: Routes = [
   {
     path: 'books/the-other-side-of-midnight/review',
     component: TheOtherSideOfMidnightComponent
-  }   
+  },
+  
+   {
+    path: 'resume',
+    component: ResumeComponent
+  }
 
 ];
