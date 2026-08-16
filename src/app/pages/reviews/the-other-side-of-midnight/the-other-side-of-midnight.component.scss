@@ -1,0 +1,711 @@
+.review-page {
+  min-height: 100vh;
+
+  padding: 70px 40px 110px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffafd 0%,
+      #fff4f8 100%
+    );
+}
+
+.review-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 65px;
+
+  color: #d9467a;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    color: #c9366b;
+    transform: translateX(-4px);
+  }
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.review-hero {
+  display: grid;
+
+  grid-template-columns:
+    280px minmax(0, 1fr);
+
+  gap: 75px;
+
+  align-items: center;
+
+  margin-bottom: 110px;
+}
+
+.book-cover {
+  position: relative;
+
+  width: 100%;
+  max-width: 280px;
+
+  z-index: 1;
+
+  img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 14px;
+
+    box-shadow:
+      0 22px 50px
+      rgba(31, 31, 46, 0.2);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 14px;
+    right: -14px;
+    bottom: -14px;
+    left: 14px;
+
+    z-index: -1;
+
+    border-radius: 14px;
+
+    background: #f3bfd1;
+  }
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.review-label {
+  margin: 0 0 14px;
+
+  color: #d9467a;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.hero-content h1 {
+  margin: 0 0 12px;
+
+  color: #1f1f2e;
+
+  font-size:
+    clamp(46px, 5vw, 72px);
+
+  line-height: 1.05;
+
+  span {
+    color: #d9467a;
+  }
+}
+
+.author {
+  margin: 0 0 18px;
+
+  color: #8f8f99;
+
+  font-size: 15px;
+}
+
+.rating {
+  margin-bottom: 24px;
+
+  color: #d9467a;
+
+  font-size: 19px;
+
+  letter-spacing: 3px;
+}
+
+.hero-summary {
+  max-width: 680px;
+
+  margin: 0 0 28px;
+
+  color: #60606b;
+
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.review-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-bottom: 20px;
+
+  span {
+    display: inline-flex;
+
+    padding: 8px 13px;
+
+    border:
+      1px solid #f4d4df;
+
+    border-radius: 999px;
+
+    background: #fff0f5;
+
+    color: #d9467a;
+
+    font-size: 11px;
+    font-weight: 600;
+  }
+}
+
+.spoiler-badge {
+  display: inline-flex;
+
+  padding: 8px 13px;
+
+  border-radius: 999px;
+
+  background: #1f1f2e;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section-heading {
+  max-width: 720px;
+
+  margin-bottom: 45px;
+}
+
+.mini-label {
+  margin: 0 0 9px;
+
+  color: #d9467a;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.section-heading h2,
+.spoiler-heading h2 {
+  margin: 0 0 14px;
+
+  color: #292934;
+
+  font-size:
+    clamp(32px, 4vw, 42px);
+
+  line-height: 1.2;
+}
+
+.section-heading > p:last-child,
+.spoiler-heading > p:last-child {
+  margin: 0;
+
+  color: #73737d;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   THOUGHTS
+========================= */
+
+.thoughts-section {
+  margin-bottom: 110px;
+}
+
+.thoughts-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.thought-card {
+  padding: 32px;
+
+  border:
+    1px solid #eedfe5;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 10px 30px
+    rgba(31, 31, 46, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform:
+      translateY(-5px);
+
+    box-shadow:
+      0 18px 40px
+      rgba(217, 70, 122, 0.09);
+  }
+
+  h3 {
+    margin: 12px 0 13px;
+
+    color: #292934;
+
+    font-size: 20px;
+  }
+
+  p {
+    margin: 0;
+
+    color: #696974;
+
+    font-size: 14px;
+    line-height: 1.85;
+  }
+}
+
+.thought-number {
+  color: #d9467a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 1.4px;
+}
+
+
+/* =========================
+   SPOILER ZONE
+========================= */
+
+.spoiler-zone {
+  margin-bottom: 110px;
+
+  padding: 55px;
+
+  border:
+    1px solid #ecc4d2;
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff5f8 0%,
+      #ffffff 100%
+    );
+
+  box-shadow:
+    0 15px 40px
+    rgba(31, 31, 46, 0.05);
+}
+
+.spoiler-heading {
+  max-width: 720px;
+
+  margin-bottom: 40px;
+}
+
+.character-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+}
+
+.character-card {
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  border:
+    1px solid #eedce3;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  &:hover {
+    transform:
+      translateY(-5px);
+
+    box-shadow:
+      0 18px 38px
+      rgba(217, 70, 122, 0.09);
+  }
+
+  h3 {
+    margin: 9px 0 13px;
+
+    color: #292934;
+
+    font-size: 19px;
+  }
+
+  p {
+    margin: 0;
+
+    color: #696974;
+
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+
+.character-name {
+  color: #d9467a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+
+/* =========================
+   REFLECTION
+========================= */
+
+.reflection-section {
+  margin-bottom: 110px;
+}
+
+.reflection-card {
+  position: relative;
+
+  padding: 55px 60px;
+
+  overflow: hidden;
+
+  border:
+    1px solid #efc9d6;
+
+  border-radius: 28px;
+
+  background:
+    radial-gradient(
+      circle at top,
+      #ffffff 0%,
+      #fff0f5 65%,
+      #fffafd 100%
+    );
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px
+    rgba(217, 70, 122, 0.06);
+
+  &::before {
+    content: "“";
+
+    position: absolute;
+
+    top: -25px;
+    left: 30px;
+
+    color:
+      rgba(217, 70, 122, 0.08);
+
+    font-family:
+      Georgia, serif;
+
+    font-size: 180px;
+  }
+
+  h2 {
+    position: relative;
+
+    max-width: 780px;
+
+    margin:
+      0 auto 20px;
+
+    color: #292934;
+
+    font-size:
+      clamp(30px, 3vw, 42px);
+
+    line-height: 1.3;
+  }
+
+  p:last-child {
+    position: relative;
+
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #696974;
+
+    font-size: 15px;
+    line-height: 1.9;
+  }
+}
+
+.reflection-label {
+  position: relative;
+
+  margin: 0 0 16px;
+
+  color: #d9467a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+
+/* =========================
+   FULL REVIEW
+========================= */
+
+.full-review {
+  padding-top: 90px;
+
+  border-top:
+    1px solid #efdce3;
+}
+
+.review-paper {
+  position: relative;
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding:
+    60px 70px
+    60px 85px;
+
+  overflow: hidden;
+
+  border:
+    1px solid #efdce3;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #ffffff,
+      #fffdfd
+    );
+
+  box-shadow:
+    0 18px 45px
+    rgba(31, 31, 46, 0.06);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 48px;
+
+    width: 2px;
+
+    background: #f5c6d7;
+  }
+
+  p {
+    position: relative;
+
+    margin:
+      0 0 27px;
+
+    color: #55515c;
+
+    font-size: 16px;
+    line-height: 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong,
+  em {
+    color: #d9467a;
+  }
+}
+
+.review-paper
+p:first-child::first-letter {
+
+  float: left;
+
+  margin-top: 9px;
+  margin-right: 8px;
+
+  color: #d9467a;
+
+  font-family:
+    Georgia, serif;
+
+  font-size: 52px;
+  font-weight: 700;
+
+  line-height: 0.75;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+  .review-page {
+    padding:
+      60px 30px
+      90px;
+  }
+
+  .review-hero {
+    grid-template-columns:
+      220px minmax(0, 1fr);
+
+    gap: 50px;
+  }
+
+  .book-cover {
+    max-width: 220px;
+  }
+
+  .thoughts-grid,
+  .character-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .review-page {
+    padding:
+      45px 20px
+      75px;
+  }
+
+  .review-hero {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    margin-bottom: 80px;
+  }
+
+  .book-cover {
+    max-width: 190px;
+
+    margin: 0 auto;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-summary {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .review-tags {
+    justify-content: center;
+  }
+
+  .spoiler-zone {
+    padding: 35px 25px;
+  }
+
+  .reflection-card {
+    padding: 40px 25px;
+  }
+
+  .review-paper {
+    padding:
+      40px 25px
+      40px 48px;
+
+    &::before {
+      left: 27px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.9;
+    }
+  }
+}
