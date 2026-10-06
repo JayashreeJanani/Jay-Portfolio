@@ -1,3 +1,7 @@
+/* ==========================================
+   BOOKS PAGE
+========================================== */
+
 .books-page {
   min-height: 100vh;
 
@@ -19,9 +23,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    BACK LINK
-========================= */
+========================================== */
 
 .back-link {
   display: inline-flex;
@@ -41,14 +45,15 @@
 
   &:hover {
     transform: translateX(-4px);
+
     color: #c9366b;
   }
 }
 
 
-/* =========================
+/* ==========================================
    PAGE HEADING
-========================= */
+========================================== */
 
 .books-heading {
   max-width: 850px;
@@ -93,9 +98,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    COMMON LABEL
-========================= */
+========================================== */
 
 .mini-label {
   margin: 0 0 8px;
@@ -110,9 +115,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    BOOK SPREAD
-========================= */
+========================================== */
 
 .book-spread {
   margin-bottom: 120px;
@@ -134,14 +139,14 @@
 }
 
 
-/* =========================
+/* ==========================================
    SCATTERED BOOK AREA
-========================= */
+========================================== */
 
 .spread-area {
   position: relative;
 
-  min-height: 650px;
+  min-height: 760px;
 
   border: 1px solid #efdce3;
   border-radius: 32px;
@@ -161,14 +166,14 @@
 }
 
 
-/* =========================
+/* ==========================================
    INDIVIDUAL BOOKS
-========================= */
+========================================== */
 
 .spread-book {
   position: absolute;
 
-  width: 145px;
+  width: 135px;
 
   cursor: pointer;
 
@@ -178,15 +183,18 @@
     z-index 0s;
 
   img {
+    display: block;
+
     width: 100%;
     height: auto;
-
-    display: block;
 
     border-radius: 12px;
 
     box-shadow:
       0 14px 28px rgba(31, 31, 46, 0.18);
+
+    transition:
+      box-shadow 0.35s ease;
   }
 
   &:hover {
@@ -205,63 +213,113 @@
 }
 
 
-/* =========================
+/* ==========================================
    SCATTER POSITIONS
-========================= */
+========================================== */
+
+/* The Secrets We Share */
 
 .book-one {
-  top: 90px;
-  left: 8%;
+  top: 70px;
+  left: 7%;
 
-  transform: rotate(-8deg);
+  transform: rotate(-7deg);
 }
 
+
+/* Sherlock Holmes */
+
 .book-two {
-  top: 235px;
+  top: 240px;
   left: 25%;
 
   transform: rotate(5deg);
 }
 
+
+/* Atomic Habits */
+
 .book-three {
-  top: 70px;
-  left: 42%;
+  top: 55px;
+  left: 43%;
 
   transform: rotate(-3deg);
 }
 
+
+/* Homecoming */
+
 .book-four {
-  top: 255px;
-  left: 57%;
+  top: 260px;
+  left: 58%;
 
   transform: rotate(7deg);
 }
 
+
+/* The High 5 Habit */
+
 .book-five {
-  top: 100px;
+  top: 85px;
   right: 18%;
 
   transform: rotate(4deg);
 }
 
+
+/* The Other Side of Midnight */
+
 .book-six {
   bottom: 55px;
-  right: 7%;
+  right: 6%;
 
   transform: rotate(-6deg);
 }
 
+
+/* Twilight */
+
 .book-seven {
-  bottom: 40px;
-  left: 10%;
+  bottom: 45px;
+  left: 9%;
 
   transform: rotate(3deg);
 }
 
 
-/* =========================
+/* Beyond The Case File */
+
+.book-eight {
+  bottom: 55px;
+  left: 24%;
+
+  transform: rotate(-4deg);
+}
+
+
+/* Aphrodite */
+
+.book-nine {
+  bottom: 45px;
+  left: 42%;
+
+  transform: rotate(3deg);
+}
+
+
+/* Mastery */
+
+.book-ten {
+  bottom: 60px;
+  right: 27%;
+
+  transform: rotate(-4deg);
+}
+
+
+/* ==========================================
    CURRENTLY READING
-========================= */
+========================================== */
 
 .current-book {
   position: absolute;
@@ -270,12 +328,12 @@
 .current-badge {
   position: absolute;
 
-  top: -14px;
+  top: -16px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  z-index: 2;
+  z-index: 3;
 
   white-space: nowrap;
 
@@ -284,6 +342,7 @@
   border-radius: 999px;
 
   background: #d9467a;
+
   color: #ffffff;
 
   font-size: 9px;
@@ -297,9 +356,45 @@
 }
 
 
-/* =========================
+/* ==========================================
+   NEXT BOOK
+========================================== */
+
+.next-badge {
+  position: absolute;
+
+  top: -16px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 3;
+
+  white-space: nowrap;
+
+  padding: 7px 12px;
+
+  border: 1px solid #f3bfd1;
+  border-radius: 999px;
+
+  background: #fffafd;
+
+  color: #d9467a;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+
+  box-shadow:
+    0 8px 18px rgba(217, 70, 122, 0.14);
+}
+
+
+/* ==========================================
    TIMELINE SECTION
-========================= */
+========================================== */
 
 .reading-timeline {
   padding-top: 20px;
@@ -331,9 +426,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    TIMELINE LINE
-========================= */
+========================================== */
 
 .timeline {
   position: relative;
@@ -367,9 +462,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    TIMELINE ITEM
-========================= */
+========================================== */
 
 .timeline-item {
   position: relative;
@@ -398,9 +493,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    TIMELINE DOT
-========================= */
+========================================== */
 
 .timeline-dot {
   position: absolute;
@@ -430,9 +525,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    TIMELINE CARD
-========================= */
+========================================== */
 
 .timeline-card {
   position: relative;
@@ -495,9 +590,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    TIMELINE DETAILS
-========================= */
+========================================== */
 
 .timeline-number {
   color: #d9467a;
@@ -528,7 +623,8 @@
   font-size: 12px;
 }
 
-.timeline-review {
+.timeline-review,
+.book-summary {
   margin: 0;
 
   color: #686873;
@@ -538,9 +634,9 @@
 }
 
 
-/* =========================
+/* ==========================================
    SPOILER BADGE
-========================= */
+========================================== */
 
 .spoiler-badge {
   display: inline-flex;
@@ -565,34 +661,72 @@
 }
 
 
-/* =========================
+/* ==========================================
    TABLET
-========================= */
+========================================== */
 
 @media (max-width: 1000px) {
 
   .spread-area {
-    min-height: 580px;
+    min-height: 680px;
   }
 
   .spread-book {
-    width: 125px;
+    width: 115px;
+  }
+
+
+  /* Slightly adjust positions */
+
+  .book-one {
+    left: 5%;
+  }
+
+  .book-two {
+    left: 23%;
+  }
+
+  .book-three {
+    left: 42%;
+  }
+
+  .book-four {
+    left: 57%;
+  }
+
+  .book-five {
+    right: 10%;
   }
 
   .book-six {
     right: 4%;
   }
 
+  .book-seven {
+    left: 6%;
+  }
+
+  .book-eight {
+    left: 23%;
+  }
+
+  .book-nine {
+    left: 41%;
+  }
+
+  .book-ten {
+    right: 24%;
+  }
+
   .timeline-card {
     max-width: 350px;
   }
-
 }
 
 
-/* =========================
+/* ==========================================
    MOBILE
-========================= */
+========================================== */
 
 @media (max-width: 750px) {
 
@@ -605,23 +739,25 @@
   }
 
 
-  /* -------------------------
+  /* ---------------------------------------
      BOOK SPREAD
-  ------------------------- */
+  --------------------------------------- */
 
   .spread-area {
     min-height: auto;
 
-    padding: 35px 20px;
+    padding: 45px 20px;
 
     display: grid;
 
     grid-template-columns:
       repeat(2, minmax(0, 1fr));
 
-    gap: 25px;
+    gap: 45px 25px;
 
     align-items: start;
+
+    overflow: visible;
   }
 
   .spread-book {
@@ -645,10 +781,20 @@
     }
   }
 
+  .current-book,
+  .next-book {
+    position: relative;
+  }
 
-  /* -------------------------
+  .current-badge,
+  .next-badge {
+    top: -18px;
+  }
+
+
+  /* ---------------------------------------
      TIMELINE
-  ------------------------- */
+  --------------------------------------- */
 
   .timeline {
     &::before {
@@ -678,13 +824,12 @@
     left: 3px;
     right: auto;
   }
-
 }
 
 
-/* =========================
+/* ==========================================
    SMALL MOBILE
-========================= */
+========================================== */
 
 @media (max-width: 450px) {
 
@@ -699,10 +844,23 @@
   .spread-area {
     grid-template-columns:
       repeat(2, 1fr);
+
+    gap: 40px 18px;
+
+    padding: 40px 15px;
   }
 
   .spread-book {
     width: 95px;
+  }
+
+  .current-badge,
+  .next-badge {
+    padding: 6px 8px;
+
+    font-size: 7px;
+
+    letter-spacing: 0.5px;
   }
 
   .timeline-card {
@@ -712,12 +870,4 @@
       font-size: 21px;
     }
   }
-
-}
-
-.book-eight {
-  top: 330px;
-  left: 38%;
-
-  transform: rotate(-5deg);
 }

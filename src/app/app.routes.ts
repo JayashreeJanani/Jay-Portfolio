@@ -9,6 +9,8 @@ import { HomecomingComponent } from './pages/reviews/homecoming/homecoming.compo
 import { High5HabitsComponent } from './pages/reviews/high-5-habits/high-5-habits.component';
 import { TheOtherSideOfMidnightComponent } from './pages/reviews/the-other-side-of-midnight/the-other-side-of-midnight.component';
 import { ResumeComponent } from './pages/resume/resume.component';
+import { TwilightComponent } from './pages/reviews/twilight/twilight.component';
+import { BeyondTheCaseFilesComponent } from './pages/reviews/beyond-the-case-files/beyond-the-case-files.component';
 export const routes: Routes = [
 
       {
@@ -49,7 +51,19 @@ export const routes: Routes = [
     path: 'books/the-other-side-of-midnight/review',
     component: TheOtherSideOfMidnightComponent
   },
-  
+
+  {
+    path: 'books/the-other-side-of-midnight/review',
+    component: TheOtherSideOfMidnightComponent
+  },
+  {
+    path: 'books/twilight/review',
+    component: TwilightComponent
+  },
+   {
+    path: 'books/beyond-the-case-files/review',
+    component: BeyondTheCaseFilesComponent
+  },
    {
     path: 'resume',
     component: ResumeComponent
